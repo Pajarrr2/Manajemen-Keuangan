@@ -1,9 +1,9 @@
 # 📘 Manajemen Keuangan
 
 ## Anggota Kelompok
-| NIM | Nama |
+| NIM | Nama | Uss Github |
 |-----|------|
-| C-202210370311290 | Fajar Putra Pratama |
+| C-202210370311290 | Fajar Putra Pratama | Pajarrr2 |
 | C-202210370311297 | Fito Nurdiansyah |
 
 ---
