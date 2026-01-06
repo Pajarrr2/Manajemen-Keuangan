@@ -38,8 +38,16 @@ export default {
     return {
       nama: "Membeli Sepatu",
       target: 1000000,
-      terkumpul: 500000,
+      terkumpul: 0,
     };
+  },
+  created() {
+    const q = this.$route && this.$route.query ? this.$route.query : {};
+    if (q.nama) this.nama = q.nama;
+    if (q.jumlah) {
+      const n = Number(q.jumlah);
+      if (!isNaN(n) && n > 0) this.target = n;
+    }
   },
   computed: {
     progress() {

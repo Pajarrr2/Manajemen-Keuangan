@@ -14,8 +14,6 @@
       <span class="toggle" @click="showPassword = !showPassword">👁</span>
     </div>
 
-    <p class="forgot">Forgot Password?</p>
-
     <button @click="login">LOGIN</button>
   </div>
 </template>
