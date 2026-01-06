@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <div class="back" @click="$router.back()">‹ Kembali</div>
     <h2>Target Tabungan</h2>
 
     <label>Nama Target</label>
@@ -27,7 +28,7 @@ export default {
   },
   methods: {
     konfirmasi() {
-      this.$router.push("/target/detail");
+      this.$router.push({ path: "/target/detail", query: { nama: this.nama, jumlah: Number(this.jumlah) } });
     },
   },
 };
@@ -37,6 +38,11 @@ export default {
 .container {
   padding: 20px;
 }
+ .back {
+  cursor: pointer;
+  margin-bottom: 15px;
+  font-size: 16px;
+ }
 label {
   display: block;
   font-size: 12px;
